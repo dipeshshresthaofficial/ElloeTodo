@@ -1,0 +1,41 @@
+.main-cont{
+    /* border: 2px solid orange; */
+    width: 60vw;
+    padding: 20px 10px;
+}
+
+.create-todo-form-cont{
+    display: none;
+}
+.create-todo-form-cont form{
+    display: flex;
+    flex-direction: column;
+    align-items: c;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.create-todo-form-cont form input{
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px 5px;
+    margin-bottom: 5px;
+}
+
+.todo-card-cont{
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+.todo-card-cont p{
+    margin: 0;
+    font-weight: 800;
+}
+
+.todo-card-cont span{
+    font-size: 0.85em;
+    font-style: italic;
+}

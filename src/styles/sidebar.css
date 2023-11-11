@@ -1,0 +1,25 @@
+@import "./colors.css";
+
+.sidebar-cont{
+    border-right: 2px solid gray;
+    height: 99vh;
+    width: 200px;
+    /* padding: 5px 10px; */
+}
+
+.sidebar-item{
+    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+.sidebar-item p{
+    /* display: inline-block; */
+    margin: 0 0 0 10px;
+
+}
