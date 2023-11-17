@@ -1,4 +1,5 @@
 import React, { useState,useRef } from 'react'
+import {v4 as uuidv4} from 'uuid'
 import moment from 'moment'
 
 export default function CreateTodo({onCreateNewTodo}) {
@@ -10,16 +11,20 @@ export default function CreateTodo({onCreateNewTodo}) {
   const handleFormSubmit = (e)=>{
     e.preventDefault()
     const newTodoData={
+      "id":"",
       "text":"",
-      "date":"",
+      "date":0,
       "status": "pending"
     }
     const todoContent = document.getElementById("todo-content")
     const todoDate = document.getElementById("todo-date")
-    const formattedDate = moment(todoDate.value,"YYYY-MM-DD").format("MM/DD/YYYY")
+    // const formattedDate = moment(todoDate.value,"YYYY-MM-DD").format("MM/DD/YYYY")
+    const id = crypto.randomUUID()
+    // console.log("jskldfjlkslkj"+typeof(id))
 
     newTodoData.text = todoContent.value
-    newTodoData.date = formattedDate
+    newTodoData.date = todoDate.value
+    newTodoData.id = id
 
      // Reset the form after submission
      if (formRef.current) {

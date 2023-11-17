@@ -1,7 +1,7 @@
 import React from 'react'
 import TodoViewContainer from './TodoViewContainer';
 
-export default function TodayTodo({todayTodoList}) {
+export default function TodayTodo({todayTodoList, handleDeleteTodo}) {
 
   console.log("TodayTodo Component");
   console.log(todayTodoList);
@@ -15,6 +15,7 @@ export default function TodayTodo({todayTodoList}) {
           <TodoViewContainer 
             key={index} 
             todoItem={item}
+            handleDeleteTodo={handleDeleteTodo}
             />
         ))
       }

@@ -1,7 +1,7 @@
 import React from 'react'
 import TodoViewContainer from './TodoViewContainer'
 
-export default function CompletedTodo({completedTodoList}) {
+export default function CompletedTodo({completedTodoList,handleDeleteTodo}) {
   return (
     <div>
       <h2>Completed Todo:</h2>
@@ -10,6 +10,7 @@ export default function CompletedTodo({completedTodoList}) {
           <TodoViewContainer 
             key={index} 
             todoItem={item}
+            handleDeleteTodo={handleDeleteTodo}
             />
         ))
       }

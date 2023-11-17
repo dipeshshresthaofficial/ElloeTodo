@@ -6,12 +6,17 @@
     },
     {
         "text": "This is my second todo",
-        "date": "11/11/2023",
+        "date": "11/13/2023",
         "status": "pending"
     },
     {
         "text": "This is my third todo",
-        "date": "11/12/2023",
+        "date": "11/16/2023",
+        "status": "pending"
+    },
+    {
+        "text": "This is my fourth todo",
+        "date": "11/11/2023",
         "status": "pending"
     }
 ]

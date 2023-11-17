@@ -15,6 +15,11 @@ const sidebarOptionLists = [
     "slug":"today-todo"
   },
   {
+    "img":faCalendarWeek,
+    "name":"Pending",
+    "slug":"pending-todo"
+  },
+  {
     "img":faCheckDouble,
     "name":"Completed",
     "slug":"completed-todo"

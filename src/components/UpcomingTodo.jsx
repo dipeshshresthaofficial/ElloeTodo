@@ -1,7 +1,7 @@
 import React from 'react'
 import TodoViewContainer from './TodoViewContainer';
 
-export default function UpcomingTodo({upcomingTodoList}) {
+export default function UpcomingTodo({upcomingTodoList, handleDeleteTodo}) {
   console.log("UpcomingTodo Component");
   console.log(upcomingTodoList);
   return (
@@ -12,6 +12,7 @@ export default function UpcomingTodo({upcomingTodoList}) {
           <TodoViewContainer 
             key={index} 
             todoItem={item}
+            handleDeleteTodo={handleDeleteTodo}
             />
         ))
       }
